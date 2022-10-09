@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registeration Form</title>
+    <style>
+        .space{
+        word-spacing:3px;
+        padding-left: 10px;
+        color: black; 
+        font-size: x-large;          
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+    <div style=" border: solid 0.5px black">
+            <h2>Personal Details</h2>
+        </div></br>
+        
+        <div class="space">
+          <label>Salutation</label>
+        <input list="datalist" placeholder="--None--"/>
+        
+        <datalist id="datalist">
+            <option value="Mr">
+            <option value="Mrs">
+        </datalist>
+        </div>
+
+        <div class="space">
+            <label style="margin: 8px;">First Name:</label>
+            <input type="text" style="margin-left: 27px;"/>
+        </div></br>
+
+        <div class="space">
+            <label style="margin: 8px;">Last Name:</label>
+            <input type="text" style="margin-left: 32px;" />
+        <div></br>
+
+        <div class="space">
+            <label>E-mail address:</label>
+            <input type="text"/>
+        </div> </br>
+
+        <div class="space">
+            <label>Phone Number:</label>
+            <input type="number"/>
+            </div></br>
+
+        <div class="space">
+            <label>Gender:</label>
+           <input type="radio" name="gender"/><label>Male</label>
+           <input type="radio" name="gender"/><label>Female</label>
+        </div></br>
+        
+        <div class="space">
+          <label>Date Of Birth</label>
+          <input type="date" name="DOB" max="2030-31-12">
+        </div></br>
+
+        <div class="space">
+            <label>Address:</label>
+            <textarea style="width: 300px;height: 100px;">
+            </textarea>
+        </div></br>
+        <div style="text-align: center;">
+            <input type="reset" style=" width:100px;"/>
+            <input type="button" value="Register" style="width: 100px;"/>
+        </div></br>
+      
+    </div>
+    </form>
+    
+</body>
+</html>
