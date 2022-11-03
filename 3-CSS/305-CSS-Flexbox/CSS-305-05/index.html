@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Active Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- start your code here -->
+    <div class="main-div">
+        <div class="container">
+            <div class="dashboard">
+                <div class="logo-name">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIMAxQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAABAAIDBQYEBwj/xAA8EAABAwIEAwUFBgQHAQAAAAABAAIDBBEFEiExE0FRBiJhcZEygaGxwRQjM3LR8Ac0QlIWJUNTgrLhJP/EABoBAAEFAQAAAAAAAAAAAAAAAAEAAgMEBQb/xAAkEQACAgEEAgMBAQEAAAAAAAAAAQIRAwQSITEFMhNBYXFRIv/aAAwDAQACEQMRAD8A0DWp9kQLJXW+calQEkEkhBSSCcdkgoYkdkkCkNAnJoTgkJDhskU1zmtaXPcGtAuSTYBY7G+3cEIMeFxmVwNjO9vcHkLi/mmTnGCuRPiwzyuoI2DyG3+KjK8yk7Q4u+QyS4hNF0bGGhvoV14Z21l4hirn8SP/AHA0BzfO24UOPV45Spk+bxmeENyV/iN+XDqm5h1VS2sErQ5r7tcLgg7hOFQTzWgofphyzP8Awsi4dVG52q4xMeqfxE7aRvNf0SyEW2soSlmugnJUQydgKCcgiNAgdkbXQISHDCEk4hJIdZoignFNKpGywWSslZJEA7QbJqSSQgIFEoJDWIJBIJ1khGM/iHiU0UcGGwPy8cF0uU6kX0HksM28cmSGB7pRzYMy0vb5p/xFGGtzXiZ7zc2XpvZbs1QYZStc2BhnkAMj8oufBYuuyv5KOq8VgXwJnhdZSYtKziTUsoYNQSwt0XBDHI2XNIC3LzdpcL6brIIXsIyN8RZYntbg9HWQSkQRcRre67ILgqiszTpmo8HFpnnHZ7GZY3fZZT92Pwz0Wogqs+xusFEHDEnhndyuIt+/etFRVWXug3PVdFos7cKZyXktHH5G4o1EUt10NfdVNLLcDVWMRutFOzncuOmdIKco2nRPCJXaClZLkjfSyQBbaD1TCnIWSDYEE4JJCs0JCbZPKRVE3WMsmkJ6aURoESEEEQCS3SuiX9EhcB205opoKeEAozuO4IKztFgdTkzsMxjkbyOVpeL+nxVlX4vjtBJkhET7uAysgLwwHa7iQr+hfEInNeWh4kBbp1sF1TmmzsieGvkIzZbA2HVc/rm/ldnZeKUXp1RwVWJPpcHFZUR3l2ygWuTtosNXYhjtXUOhlZBT8TRo4BLTcXAzZvjbRbDtL97hBEZjsJG27wUGHz0VVhznwObxWtIcDuLaG3UKknRpuN8HkdbSOGK1T8uQNAc62tiWk+lwUylJEitu0Ekbaichw4hHCy35bk/vqqqj1eSt/RbtvJzXkNqfBoaI90K1hKq6Id0K0hWzE5PUdnUxSBRs2Ujd04oscAlZTNGia8XQsLhwRIIogIjAJJ+UnYJIWHay9c6x0TECUPeqdG1Y66aTqkSm7ogbHJXQSRBYCUkCUgUho8FSDZRhPCDJEEEjVvLUKR1MH1Lqpj5OK8te5oI7wAsW66DqjHFIYZ5mRukEUbngW9ogaD1UdR9qihpq6EcUOjaZWN1NyB3gsbyW1tV2dN4TdGMm+gYvDhVRT3qKerLg24Zw4jc/vwWYoxDRtq6meQ3BIgYLNDS64AsN7DdWGJ49R5HF5e15HsZSDfyP6LJQ/aK6qMr2ObHmu1pFgB4rOSvs3J5FX/Jn8TdnxGoe7cv+Wn0UmHsu66nqsNnljqKpjS8Cpe3Qe0L6W+SWHixsRY3tZdJp6cVRyerbTlZd0je6FZQtuVxUo0CsWagAaLRRzmZ2yZtgLKSMaqNo0U8I1SZU7ZM0aJr+aedlG4FMRNLqiE7ogXRLU5jbJ9kCi7JWktaBZJK/h8UkwsHcSbpaqQ2Q06qCy/QzVLVO0uiTb9UgUDYWTU7RA2SEMJRGqBXVQ0bpgZCDw2kDzPRCUlFWxY4SyS2xGQxPldljaSVZ0+HMAzTPDujW/quhsWSPKxoaOgToReSS+wbb9VSyZ3Lo2cOihDmfLOiksGGw0I0HQLmia2lkdTvAEOpidya3+33KYZmxXba4HNH7Ox0rnyXdIAG36N6AdLqnkgp9mphm8b4ODEKRs7LZGm3UXWfxDDg1oggDWF2rnnQMHM+5bfBcJZ9jBkkkJDj3CQcovoL+VlW9rcLilZDTQx/jOHGJcNW8gfeqcMLcqZeyahRg2jFvoIfsTWU4LYYI5HFxG1tbnxJF1NL2fpMRoTUOAbOzeWMWd7xzVzNQtkw+ClilcxlUXse5oBcY9Ra58F1YdA2nkmpt2HQE8xy+q1Yz2rgxZQUm7+zCzYRWUDcxbxohrnj1t5jkjBKCBqtw6LKbtcQBoSOXQrL9oKAQB1XCwNubENFh46K9h1VvbIydX4/jdAjjIK64gLKlpasPAVnBNYi6uPlGFt2S5OvKgW6KRhzi4SJGwUdlhpNWc9kUXIFOIhGxSTSEkRrkWV0lC5xCHEUNF5zomukSoc/iEM/iltB8iJsyYXJmYdULhGhrmG5LgBudFqqSD7PRsj07tifO9ys9hUfFrYtNAcx937C0+mQtVLVy6ia/isfDyP8AgbOJPd2TI4XiJxNgbbqZrswfboApSPuwPIKjZsUQ8PLGS4jbknOuJXflT5PwneSEgu+/VoQsNFlhbcsDz/c/6AfRV3aTiNkpjG0Oue9c2sL/APqtaAf/ADM9VXdoQTwSP3qFHH2JZ+hn2tDY8LZya039FPNDkqYHNdYucRe2/PX4ps7LNhA/ogv8WqaqIdT5x7TDmCnsrUc74yKmVhcO6wE3HW6psXa6Whk0FsoeT0AKssanEE73bCamsT5OH0cVy4lldg1fIy2Vgyg9bOufmnoZJWmjzQvNJiU0GzWu0HQHUK/pJcwCpu0sRhxKKblKwa+I/YXbhz7tC18MrRz2vxJcl9HKNrLozAhV8ZXQx2ikcTLjOuGSkppTS5AuSoTkO0QTNSkjQzcdj3C+pHqo3Ovsk5vM7phB5BMSJpSYr+KHEA53THB3RNseaftIXNkvER4t1CkltBvZoezrQ580nJoyD5/ort7rPLXaXG/iqrs4wtoAXf1vJ+n0XbiLzDCJt+Ec7vy8/h8lj6h3lZ2Hj47dNH95J4XyMYW8Musd9rqXjSEfhnfquSpxERGJjIjK5x3aRYeKnhZKxgEcbBfW7pSfooOi8vwmEpJ4b2EFwIF/JSPPdbzuALrmiglfWsmnkbaNrgyNmwvpcnnz9V1aAgckxjoltQ/yzPJV3aEvHBysza6+SsqIFtNEDuGC/ouHHv8AS9/NRx9iefoU1U05ZOHYv4bWi+yrmVVRwwC1munrp9QrSbSIna5bsuCenc1p4cgYzUlpbcKxEqSXJQ9qqipbQwSHKW8RoNugOoUMdS6fsjTtJvLWSgED+kE5iFxdvJX0+GSRNDBnaZczRbvEWH0Xb2bonClo4pDdtPFz/uOpT7I65KXtnR5MNp57W4cgHrdV2FPu1q1nbamM2ESWb3Ym5r+SxWDv9lX9LK0ZnkIcGmj2U7TZcsB0XQNleOal2OJQCSJNwNEhocwboEkxJKg2zrEoITHyDkVBdJNUaHPI2OLvFDMgBfZF9r6Jw0F0kEjqLBIFWzaYZFwaKBhGoaD66rpeA5pBFwRYt6hCHuxtY4XLRa6L9tAf+IWBN3Js7zFFRxpfhmIKh8GOYfh0jnFzHuY3T2ow0uBPoB5rZM1aNFmamnhd2twqoeSJmxzMA/uu0H4W+K0QcLd1NlySQVD2n70eIKaXB0ojHtOBtp4pzCOIBzA1Rb7bPEhMZIi+YADYbKo7QymNkbgxz+Vmq4G6q8a/CZbqfkoo9k0/Uppj9xAervooJTxHxxt15lTT/wApHrlIcfmVx0lRFwsxIzG17c9bKwVTG/xAAfVU9OT3XOjBHgDm+i0WCZeACNQsf24qicWhuRd0g06Wbda/s+4mjaWsJ00IA/VSPoiXZLjsIfhlSCPbjLB5kLyrC3Fkga4EEaWK9dr2ExEkyZraAn9F5RVgRY3UtDMg4h7qs6R8lTWxuJo6V1wusHRV1E7uhdzTotQ5TKqkSJIIEpEQUk0lBINDgikkkAcdG6cwm8kkkgiU1IAaqEHUF4+aCSD6HY/df03MTQ5ouLqCoc4Oc0EgDoUklz/2d59FI9jf8a4adSW0Uzhc88zBf0K1bQHbgHbkkklMdEewBrXAADVNj9uPzb80Ekxj12aAbqpxz8GP8x+SSSjh7ImyejKmp/lGDlnPzK4aEDhzWAFmC1vekkp10VH2eW/xJkezG6QtcQbn/q1bbstUSihYc/8AT0SSUjIy7MjpIXl5ufJeTYqf8/qfzj5BJJT6X2K+r9S6otIhZd7Nkklqo5XP7D0CkkiVxrt0kkkRyP/Z">
+                    <h3>John Lucas</h3>
+                    <p> Pro Member </p>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <img
+                            src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/twitch.png">
+                        <h2> streams </h2>
+                    </div>
+                    <div class="link">
+                        <img
+                            src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/steam.png">
+                        <h2> Games </h2>
+                    </div>
+                    <div class="link">
+                        <img
+                            src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/upcoming.png">
+                        <h2> New </h2>
+                    </div>
+                    <div class="link">
+                        <img
+                            src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/library.png">
+                        <h2> Library </h2>
+                    </div>
+                </div>
+                <div class="join">
+                    <h2> join pro for free games</h2>
+                    <img
+                        src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/controller.png">
+                </div>
+            </div>
+            <div class="games">
+                <div class="status">
+                    <h1> Active Games </h1>
+                    <input type="text">
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/assassins.png">
+                        <div class="card-name">
+                            <h2> Assassins creed Valhalla </h2>
+                            <p> PS5 Version </p>
+                            <div class="box"></div>
+                        </div>
+                        <h2 class="percentage"> 60% </h2>
+                    </div>
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/assassins.png">
+                        <div class="card-name">
+                            <h2> Assassins creed Valhalla </h2>
+                            <p> PS5 Version </p>
+                            <div class="box"></div>
+                        </div>
+                        <h2 class="percentage"> 60% </h2>
+                    </div>
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/developedbyed/glass-website/master/images/assassins.png">
+                        <div class="card-name">
+                            <h2> Assassins creed Valhalla </h2>
+                            <p> PS5 Version </p>
+                            <div class="box"></div>
+                        </div>
+                        <h2 class="percentage"> 60% </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
